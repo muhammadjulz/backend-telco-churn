@@ -12,7 +12,7 @@ with open('final_pipeline.pkl', 'rb') as file_1:
   model_pipeline = joblib.load(file_1)
 
 from tensorflow.keras.models import load_model
-model_ann = load_model('Churn_model.h5')
+model_ann = load_model('churn_model.h5')
 
 # rooting
 @app.route('/') # Homepage
